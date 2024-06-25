@@ -10,7 +10,8 @@
 #clone_dir="stable-diffusion-webui"
 
 # Commandline arguments for webui.py, for example: export COMMANDLINE_ARGS="--medvram --opt-split-attention"
-export COMMANDLINE_ARGS="--update-check"
+# export COMMANDLINE_ARGS=
+export PYTORCH_CUDA_ALLOC_CONF=garbage_collection_threshold:0.9,max_split_size_mb:512
 
 export CUDA_VISIBLE_DEVICES="0,1"
 
